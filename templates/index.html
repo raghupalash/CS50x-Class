@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <h5 class="loginHead">This is CS50!</h5>
+                <div class="jumboBorder">
+                    <img src="{{url_for('static', filename='cs50.jpg')}}" alt="meme">
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-sm">
+                        <h5 class="loginHead">Update Week!</h5>
+                        <div class="jumboBorder">
+                            <div class="container p-5">
+                                <h3>Done with this week?</h3>
+                                <p class="text-muted">Update your week so that your friend can see your progress!</p>
+                                <form action="/" method="post">
+                                    <input type="number" name="week" placeholder="Currently on week {{ week }}!" required>
+                                    <button class="btn btn-success">Update</button>
+                                </form>
+                            </div>      
+                        </div>
+                        <div class="loginHead">Some Advice!</div>
+                        <div class="jumboBorder">
+                            <div class="container advice">
+                                <h3>My two cents!</h3>
+                                <p>When overwhelmed by the challenging psets, people often tend to make groups "to help each other out" filled with hunderds of beginners! Try to make small groups (containing 4-5 people maybe!). It's more managable, and productive that way!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

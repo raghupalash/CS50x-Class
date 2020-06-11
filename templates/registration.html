@@ -1,0 +1,268 @@
+{% extends "layout.html" %}
+   
+    {% block title %}register{% endblock %}
+
+        {% block main %}
+            <div class="container register-container">
+                <p class="loginHead">Registration step(ii)</p>
+                <form class="jumboBorder" method="post">
+                    <div class="container p-5">
+                        <div class="row">
+                            <div class="col-sm form-group">
+                                <h5 class="text-muted">Course*</h5>
+                                <select name="course" class="form-control inputWidth" required>
+                                    <option selected disabled>(e.g., Intro to CS)</option>
+                                    <option value="Intro">Intro To CS</option>
+                                    <option value="AI">Intro To AI</option>
+                                    <option value="Lawyers">CS50 for lawyers</option>
+                                    <option value="Web">Web Programming</option>
+                                    <option value="Tech">Understanding Technology</option>
+                                    <option value="Mobile">Mobile App Development</option>
+                                    <option value="Business">CS For Business Professionals</option>
+                                    <option value="Game">Intro To Game Development</option>
+                                </select>
+                            </div>
+                            <div class="col-sm form-group">
+                                <h5 class="text-muted">Week**</h5>
+                                <input name="week" class="form-control inputWidth" type="number" placeholder="(e.g., 3)" required>
+                            </div>
+                        </div>
+                        <h5 class="text-muted">Languages***</h5>
+                        <div class="row">
+                            <div class="col-sm form-group">
+                                <select name="lang1" class="form-control inputWidth" required>
+                                    <option selected disabled>(e.g., English)</option>
+                                    <option>Afrikaans</option>
+                                    <option>Albanian</option>
+                                    <option>Arabic</option>
+                                    <option>Armenian</option>
+                                    <option>Basque</option>
+                                    <option>Bengali</option>
+                                    <option>Bulgarian</option>
+                                    <option>Catalan</option>
+                                    <option>Cambodian</option>
+                                    <option>Chinese (Mandarin)</option>
+                                    <option>Croatian</option>
+                                    <option>Czech</option>
+                                    <option>Danish</option>
+                                    <option>Dutch</option>
+                                    <option>English</option>
+                                    <option>Estonian</option>
+                                    <option>Fiji</option>
+                                    <option>French</option>
+                                    <option>Georgian</option>
+                                    <option>German</option>
+                                    <option>Greek</option>
+                                    <option>Gujarati</option>
+                                    <option>Hebrew</option>
+                                    <option>Hindi</option>
+                                    <option>Hungarian</option>
+                                    <option>Icelandic</option>
+                                    <option>Indonesian</option>
+                                    <option>Irish</option>
+                                    <option>Italian</option>
+                                    <option>Japanese</option>
+                                    <option>Javanese</option>
+                                    <option>Korean</option>
+                                    <option>Latin</option>
+                                    <option>Latvian</option>
+                                    <option>Lithuanian</option>
+                                    <option>Macedonian</option>
+                                    <option>Malay</option>
+                                    <option>Malayalam</option>
+                                    <option>Maltese</option>
+                                    <option>Maori</option>
+                                    <option>Marathi</option>
+                                    <option>Mongolian</option>
+                                    <option>Nepali</option>
+                                    <option>Norwegian</option>
+                                    <option>Persian</option>
+                                    <option>Polish</option>
+                                    <option>Portuguese</option>
+                                    <option>Punjabi</option>
+                                    <option>Quechua</option>
+                                    <option>Romanian</option>
+                                    <option>Russian</option>
+                                    <option>Samoan</option>
+                                    <option>Serbian</option>
+                                    <option>Slovak</option>
+                                    <option>Slovenian</option>
+                                    <option>Spanish</option>
+                                    <option>Swahili</option>
+                                    <option>Swedish </option>
+                                    <option>Tamil</option>
+                                    <option>Tatar</option>
+                                    <option>Telugu</option>
+                                    <option>Thai</option>
+                                    <option>Tibetan</option>
+                                    <option>Tonga</option>
+                                    <option>Turkish</option>
+                                    <option>Ukrainian</option>
+                                    <option>Urdu</option>
+                                    <option>Uzbek</option>
+                                    <option>Vietnamese</option>
+                                    <option>Welsh</option>
+                                    <option>Xhosa</option>
+                                </select>
+                            </div>
+                            <div class="col-sm form-group">
+                                <select name="lang2" class="form-control inputWidth languages">
+                                    <option selected disabled>(e.g., Spanish)</option>
+                                    <option>Afrikaans</option>
+                                    <option>Albanian</option>
+                                    <option>Arabic</option>
+                                    <option>Armenian</option>
+                                    <option>Basque</option>
+                                    <option>Bengali</option>
+                                    <option>Bulgarian</option>
+                                    <option>Catalan</option>
+                                    <option>Cambodian</option>
+                                    <option>Chinese (Mandarin)</option>
+                                    <option>Croatian</option>
+                                    <option>Czech</option>
+                                    <option>Danish</option>
+                                    <option>Dutch</option>
+                                    <option>English</option>
+                                    <option>Estonian</option>
+                                    <option>Fiji</option>
+                                    <option>French</option>
+                                    <option>Georgian</option>
+                                    <option>German</option>
+                                    <option>Greek</option>
+                                    <option>Gujarati</option>
+                                    <option>Hebrew</option>
+                                    <option>Hindi</option>
+                                    <option>Hungarian</option>
+                                    <option>Icelandic</option>
+                                    <option>Indonesian</option>
+                                    <option>Irish</option>
+                                    <option>Italian</option>
+                                    <option>Japanese</option>
+                                    <option>Javanese</option>
+                                    <option>Korean</option>
+                                    <option>Latin</option>
+                                    <option>Latvian</option>
+                                    <option>Lithuanian</option>
+                                    <option>Macedonian</option>
+                                    <option>Malay</option>
+                                    <option>Malayalam</option>
+                                    <option>Maltese</option>
+                                    <option>Maori</option>
+                                    <option>Marathi</option>
+                                    <option>Mongolian</option>
+                                    <option>Nepali</option>
+                                    <option>Norwegian</option>
+                                    <option>Persian</option>
+                                    <option>Polish</option>
+                                    <option>Portuguese</option>
+                                    <option>Punjabi</option>
+                                    <option>Quechua</option>
+                                    <option>Romanian</option>
+                                    <option>Russian</option>
+                                    <option>Samoan</option>
+                                    <option>Serbian</option>
+                                    <option>Slovak</option>
+                                    <option>Slovenian</option>
+                                    <option>Spanish</option>
+                                    <option>Swahili</option>
+                                    <option>Swedish </option>
+                                    <option>Tamil</option>
+                                    <option>Tatar</option>
+                                    <option>Telugu</option>
+                                    <option>Thai</option>
+                                    <option>Tibetan</option>
+                                    <option>Tonga</option>
+                                    <option>Turkish</option>
+                                    <option>Ukrainian</option>
+                                    <option>Urdu</option>
+                                    <option>Uzbek</option>
+                                    <option>Vietnamese</option>
+                                    <option>Welsh</option>
+                                    <option>Xhosa</option>
+                                </select>
+                            </div>
+                            <div class="col-sm form-group">
+                                <select name="lang3" class="form-control inputWidth languages">
+                                    <option selected disabled>(e.g., Hindi)</option>
+                                    <option>Afrikaans</option>
+                                    <option>Albanian</option>
+                                    <option>Arabic</option>
+                                    <option>Armenian</option>
+                                    <option>Basque</option>
+                                    <option>Bengali</option>
+                                    <option>Bulgarian</option>
+                                    <option>Catalan</option>
+                                    <option>Cambodian</option>
+                                    <option>Chinese (Mandarin)</option>
+                                    <option>Croatian</option>
+                                    <option>Czech</option>
+                                    <option>Danish</option>
+                                    <option>Dutch</option>
+                                    <option>English</option>
+                                    <option>Estonian</option>
+                                    <option>Fiji</option>
+                                    <option>French</option>
+                                    <option>Georgian</option>
+                                    <option>German</option>
+                                    <option>Greek</option>
+                                    <option>Gujarati</option>
+                                    <option>Hebrew</option>
+                                    <option>Hindi</option>
+                                    <option>Hungarian</option>
+                                    <option>Icelandic</option>
+                                    <option>Indonesian</option>
+                                    <option>Irish</option>
+                                    <option>Italian</option>
+                                    <option>Japanese</option>
+                                    <option>Javanese</option>
+                                    <option>Korean</option>
+                                    <option>Latin</option>
+                                    <option>Latvian</option>
+                                    <option>Lithuanian</option>
+                                    <option>Macedonian</option>
+                                    <option>Malay</option>
+                                    <option>Malayalam</option>
+                                    <option>Maltese</option>
+                                    <option>Maori</option>
+                                    <option>Marathi</option>
+                                    <option>Mongolian</option>
+                                    <option>Nepali</option>
+                                    <option>Norwegian</option>
+                                    <option>Persian</option>
+                                    <option>Polish</option>
+                                    <option>Portuguese</option>
+                                    <option>Punjabi</option>
+                                    <option>Quechua</option>
+                                    <option>Romanian</option>
+                                    <option>Russian</option>
+                                    <option>Samoan</option>
+                                    <option>Serbian</option>
+                                    <option>Slovak</option>
+                                    <option>Slovenian</option>
+                                    <option>Spanish</option>
+                                    <option>Swahili</option>
+                                    <option>Swedish </option>
+                                    <option>Tamil</option>
+                                    <option>Tatar</option>
+                                    <option>Telugu</option>
+                                    <option>Thai</option>
+                                    <option>Tibetan</option>
+                                    <option>Tonga</option>
+                                    <option>Turkish</option>
+                                    <option>Ukrainian</option>
+                                    <option>Urdu</option>
+                                    <option>Uzbek</option>
+                                    <option>Vietnamese</option>
+                                    <option>Welsh</option>
+                                    <option>Xhosa</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="submit"><button class="btn btn-success btn-block" type="submit" style="margin-bottom: 1rem;">Submit</button></div>
+                        <h6 class="text-muted">* Input the CS50 course are you currently taking.</h6>
+                        <h6 class="text-muted">** Input the week you are currently on.</h6>
+                        <h6 class="text-muted">*** Input the languages in which you would like to interact with your classmates (you can select the languages in any order)</h6>
+                    </div>  
+                </form>
+            </div>
+        {% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}Verification{% endblock %}
+
+{% block main %}
+    <div class="container register-container">
+        <h5 class="loginHead">Verification</h5>
+        <div class="jumbotron jumboBorder">
+            <div class="container">
+                <h1>Confirm Your Email!</h1>
+                <p class="text-muted text-small">It helps us keep this website functional!</p>
+                <div>
+                    <h5>We have sent a verification link to {{ email }}!</h5>
+                </div>
+                <ul>
+                    <li>Wait for a minute or two!</li>
+                    <li>Didn't Recieve email? <a href="/verify">Resend</a>.</li>
+                </ul>
+                <div>
+                    <h5>
+                        Wrong email? Not to worry, Change it!
+                    </h5>
+                    <form action="/verify" method="post">
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Email" name="email">
+                        </div>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

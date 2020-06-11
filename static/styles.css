@@ -1,0 +1,165 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;   
+}
+
+.form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+span .form-control
+{
+    margin-right: 10px
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+}
+
+.heading
+{
+    padding: 25px 0px;
+    font-weight: 200;
+}
+
+.largeInput
+{
+    /* controls width of large input fields */
+    width: 71.2% !important;
+}
+
+input[type="radio"]
+{
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+label
+{
+    margin-right: 23px;
+}
+
+form p
+{
+    font-size: 0.7rem !important;
+    margin-bottom: 0px;
+}
+.submit
+{
+    margin-top: 10px !important;
+    width: 30% !important;
+}
+
+.text-centered
+{
+    text-align: center;
+}
+
+
+footer div a
+{
+    font-size: 13px;
+    margin: 0px 13px;
+}
+
+footer p
+{
+    font-size: 18px;
+    margin-top: 8px;
+    
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+.meme
+{
+    max-width:120%
+}
+.country 
+{
+    padding-bottom: 5%;
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+}
+
+.jumbotron-fluid
+{
+    padding: 50px 0px;
+}
+.jumboBorder
+{
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px; 
+    margin-bottom: 2rem;
+}
+
+.loginHead 
+{
+    border: solid gray 1px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-left: 7px;
+    background: #153f82;
+    color: white;
+}
+
+.navbar-custom
+{ 
+    background-color: #153f82 !important;
+} 
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text 
+{ 
+    color: white; 
+} 
+
+/* styles for registration step 2 */
+.register-container
+{
+    width: 60%; 
+}
+
+.inputWidth
+{
+    width: 100%;
+}
+
+nav .navbar-nav li a
+{
+    color: white !important;   
+}
+
+#Joker
+{
+    text-align: center;
+} 
+
+.advice
+{
+    padding: 2% 2%;
+}
+

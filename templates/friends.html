@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}Friends{% endblock %}
+
+{% block main %}
+    <div class="container p-5">
+        <h5 class="loginHead">Friends!</h5>
+        <div class="jumboBorder">
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Course</th>
+                    <th>Language</th> 
+                    <th>Week</th>
+                    <th>Contact</th>
+                </thead>
+                <tbody>
+                        {% for row in rows %}
+                            <tr>
+                                <td>{{ row.name }} {{ row.surname }}</td>
+                                <td>{{ row.country }}</td>
+                                <td>{{ row.course }}</td>
+                                <td>{{ row.language }}</td>
+                                <td>{{ row.week }}</td>
+                                <td>{{ row.email }}</td>
+                            </tr>
+                        {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

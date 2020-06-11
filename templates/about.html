@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block main %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <h5 class="loginHead">This was my Final Project!</h5>
+                <div class="jumboBorder">
+                    <img src="{{ url_for('static', filename='made_website.jpeg')}}">
+                </div>
+            </div>
+            <div class="col-sm">
+                <h1 class="display-5 heading">About Me and This Project!</h1>
+                <h5 class="text-muted">
+                    This website has a basic idea, it connects you with classmates you would like to connect with. It's simple to use, you search for classmates according to your needs, you send them a friend reqeust, and when they accept it, you can see their contact details!
+                </h5>
+                <br>
+                <h5 class="text-muted">
+                    I am a first year engineering undergrad from Bhopal, India. And had very little programming experience prior to joining this course. I started CS50 an year ago with CS50 2019 but had to leave it midway
+                    because of my college studies (and Procrastination!). I continued the course again with CS50 2020, and this time, as you can see, I've done it!
+                </h5>
+                <br>
+                <h5 class="text-muted">
+                    My name is Palash and now I can proudly say, that 
+                </h5>
+                <br>
+                <h3>"I took CS50!"</h3>
+            </div>
+        </div>
+    </div>
+{% endblock %}

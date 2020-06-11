@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}Notifications{% endblock %}
+
+{% block main %}
+    <div class="container p-5">
+        <h5 class="loginHead">Friend Reqeusts!</h5>
+        <div class="jumboBorder">
+            <table class="table table-striped">
+                <thead>
+                    <th>Name</th>
+                    <th>Country</th>
+                    <th>Course</th>
+                    <th>Language</th> 
+                    <th>Week</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                        {% for row in rows %}
+                            <tr>
+                                <td>{{ row.name }} {{ row.surname }}</td>
+                                <td>{{ row.country }}</td>
+                                <td>{{ row.course }}</td>
+                                <td>{{ row.language }}</td>
+                                <td>{{ row.week }}</td>
+                                <td>
+                                    <form action="/notif" method="post">
+                                        <input type="hidden" name="person_id" value="{{ row.id }}">
+                                        <button class="btn btn-success" name="action" value="accepted">Accept</button>
+                                        <button class="btn btn-danger" name="action" value="deleted">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

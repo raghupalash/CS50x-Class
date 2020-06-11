@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Verified!{% endblock %}
+
+{% block main %}
+    <div class="container register-container">
+        <h5 class="loginHead">Verified</h5>
+        <div class="jumbotron jumboBorder">
+            <div class="container">
+                <h1>Welcome {{ name }}!</h1>
+                <p class="text-muted text-small">You are successfully registered!</p>
+                <p>To get started <a href="/login">login!</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

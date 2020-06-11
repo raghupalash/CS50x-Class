@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block navbar_content %}
+    <ul class="navbar-nav ml-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/logout">Go Back</a></li>
+    </ul> 
+{% endblock %}
+
+{% block main %}
+    <div class="container p-5" id="Joker">
+        <img alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt= https://memegen.link/joker/pick_a_different_font/people_lose_their_minds.jpg?font=typoline-demo " title="{{ top }}">
+    </div>
+{% endblock %}
